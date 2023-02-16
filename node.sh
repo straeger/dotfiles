@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Install latest node version, activate it and set as default
 nvm install node

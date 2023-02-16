@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/zsh_custom
 ZSH_THEME="daveaspinall"
 
-plugins=(brew cp git node npm nvm z)
+plugins=(kubectl docker docker-compose git node npm nvm z)
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 

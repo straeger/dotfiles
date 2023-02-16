@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-source apt.sh
-source node.sh
+. ./apt.sh
+. ./node.sh
 
 # setup symlinks using stow
 make
 
 # Update settings
-source ~/.zshrc
+. ~/.zshrc
