@@ -10,6 +10,7 @@ sudo apt-get update
 sudo apt-get install zsh 
 sudo apt-get install zsh-autosuggestions
 sudo apt-get install stow
+sudo apt-get install dos2unix
 
-rm -rf /home/$USER/.oh-my-zsh
+
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
