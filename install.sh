@@ -3,6 +3,8 @@
 . ./apt.sh
 . ./node.sh
 
+sh -c "$(wget -O- https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
+
 # setup symlinks using stow
 make
 
@@ -11,7 +13,6 @@ rm -rf $ZSH/plugins/zsh-autosuggestions
 rm -rf $ZSH/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/plugins/zsh-syntax-highlighting
-
 
 #java sdk man 
 curl -s "https://get.sdkman.io" | bash
