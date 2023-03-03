@@ -46,5 +46,5 @@
 	editor = vim
 	quotepath = false
 	compression = 0
-	autocrlf = input
+	autocrlf = true
 	
