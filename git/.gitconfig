@@ -41,10 +41,4 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[core]
-	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	editor = vim
-	quotepath = false
-	compression = 0
-	autocrlf = true
 	

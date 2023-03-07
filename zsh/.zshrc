@@ -16,7 +16,7 @@ source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/z.sh
 
 # aliases
-#source $HOME/.aliases
+source $HOME/.aliases
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -34,3 +34,5 @@ zinit light g-plane/zsh-yarn-autocompletions
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# needed by tmuxinator
+export EDITOR=vim

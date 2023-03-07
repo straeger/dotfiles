@@ -5,7 +5,6 @@
 
 
 # setup symlinks using stow
-make
 
 ZSH=$HOME/.oh-my-zsh
 rm -rf $ZSH/plugins/zsh-autosuggestions
@@ -27,3 +26,4 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 # For example, we just use `~/.cache/dein` as installation directory
 sh ./installer.sh ~/.cache/dein 
 
+sudo chsh -s $(which zsh)
