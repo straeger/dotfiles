@@ -1,8 +1,8 @@
 ZSH=$HOME//.oh-my-zsh
 ZSH_CUSTOM=$HOME/zsh_custom
-ZSH_THEME="bira"
+ZSH_THEME="miloshadzic"
 
-plugins=(kubectl docker docker-compose git node npm nvm z yarn-autocompletions)
+plugins=(kubectl docker docker-compose git node npm nvm z)
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
@@ -21,6 +21,7 @@ source $HOME/.aliases
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_SYMLINK_CURRENT=true
 
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -36,3 +37,15 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # needed by tmuxinator
 export EDITOR=vim
+
+#k8s plugin manager
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+
+if [ -d "$HOME/.nvm/current/bin" ] ; then
+    PATH="$HOME/.nvm/current/bin:$PATH"
+fi
+
+if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+    fortune | cowsay
+fi
