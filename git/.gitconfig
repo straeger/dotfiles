@@ -1,6 +1,6 @@
 [user]
 	email = traeger.stephan@gmail.com
-	name = "Stephan "
+	name = Stephan
 
 [includeIf "gitdir:~/personal/"]
   path = ~/.gitconfig-personal
@@ -42,3 +42,7 @@
 	changed = green
 	untracked = cyan
 	
+[cola]
+	spellcheck = false
+[core]
+	autocrlf = input

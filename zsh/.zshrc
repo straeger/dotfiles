@@ -31,10 +31,6 @@ source <(curl -sL init.zshell.dev); zzinit
 zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
 zinit light g-plane/zsh-yarn-autocompletions
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # needed by tmuxinator
 export EDITOR=vim
 
@@ -46,6 +42,18 @@ if [ -d "$HOME/.nvm/current/bin" ] ; then
     PATH="$HOME/.nvm/current/bin:$PATH"
 fi
 
-if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
-    fortune | cowsay
-fi
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+export PATH=$PATH:/usr/local/go/bin
+
+
+export GO111MODULE=on
+#GOPATH MUST BE OUTSIDE OF GOROOT directory!!!
+export GOPATH=/home/tge/gopath
+export PATH=$PATH:$GOPATH/bin
+
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
